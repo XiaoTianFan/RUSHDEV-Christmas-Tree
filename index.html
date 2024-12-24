@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic 3D Christmas Tree</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Import Map for Three.js and Addons -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.152.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.152.0/examples/jsm/"
+        }
+      }
+    </script>
+</head>
+<body>
+    <!-- Container for the 3D scene -->
+    <div id="container"></div>
+
+    <!-- Audio Elements -->
+    <audio id="background-music" src="assets/christmas_eve.mp3" loop></audio>
+    <audio id="secret-music" src="assets/last_christmas.mp3" loop></audio>
+
+    <!-- Main JavaScript File -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>
